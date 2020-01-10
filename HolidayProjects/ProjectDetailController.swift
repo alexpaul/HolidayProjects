@@ -8,6 +8,7 @@
 
 import UIKit
 import ImageKit
+import SafariServices
 
 class ProjectDetailController: UIViewController {
   
@@ -34,9 +35,6 @@ class ProjectDetailController: UIViewController {
       return
     }
     navigationItem.title = project.projectName
-    
-    // TODO: uncomment below when all outlets are connected to the ScrollView
-    /*
     firstNameLabel.text = project.firstName
     lastNameLabel.text = project.lastName
     descriiptionLabel.text = project.description
@@ -50,10 +48,21 @@ class ProjectDetailController: UIViewController {
         }
       }
     }
-    */
+    
   }
   
-  // TODO: add an action to open up a given Github page via SFSafariViewController
+  @IBAction func githubButtonPressed(_ sender: UIButton) {
+    guard let project = project else {
+      fatalError("project was not passesd successfully")
+    }
+    guard let url = URL(string: project.githubURL),
+      !project.githubURL.isEmpty else {
+        print("no project url")
+        return
+    }
+    let safariVC = SFSafariViewController(url: url)
+    present(safariVC, animated: true)
+  }
   
 }
 
