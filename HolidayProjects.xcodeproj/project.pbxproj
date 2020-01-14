@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		5770EF7C23C8256C00625DE6 /* ProjectsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5770EF7B23C8256C00625DE6 /* ProjectsViewController.swift */; };
 		5770EF7E23C8932400625DE6 /* projects.json in Resources */ = {isa = PBXBuildFile; fileRef = 5770EF7D23C8932400625DE6 /* projects.json */; };
-		578A2BA323C8CF9E00848C64 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 578A2BA223C8CF9E00848C64 /* ImageKit */; };
+		5785C7F323CE7F2700FEF28A /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 5785C7F223CE7F2700FEF28A /* ImageKit */; };
 		57E1738823C814BF00765FD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1738723C814BF00765FD2 /* AppDelegate.swift */; };
 		57E1738A23C814BF00765FD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1738923C814BF00765FD2 /* SceneDelegate.swift */; };
 		57E1738C23C814BF00765FD2 /* ProjectDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57E1738B23C814BF00765FD2 /* ProjectDetailController.swift */; };
@@ -40,7 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				578A2BA323C8CF9E00848C64 /* ImageKit in Frameworks */,
+				5785C7F323CE7F2700FEF28A /* ImageKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			);
 			name = HolidayProjects;
 			packageProductDependencies = (
-				578A2BA223C8CF9E00848C64 /* ImageKit */,
+				5785C7F223CE7F2700FEF28A /* ImageKit */,
 			);
 			productName = HolidayProjects;
 			productReference = 57E1738423C814BF00765FD2 /* HolidayProjects.app */;
@@ -129,7 +129,7 @@
 			);
 			mainGroup = 57E1737B23C814BF00765FD2;
 			packageReferences = (
-				578A2BA123C8CF9E00848C64 /* XCRemoteSwiftPackageReference "ImageKit" */,
+				5785C7F123CE7F2700FEF28A /* XCRemoteSwiftPackageReference "ImageKit" */,
 			);
 			productRefGroup = 57E1738523C814BF00765FD2 /* Products */;
 			projectDirPath = "";
@@ -364,20 +364,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		578A2BA123C8CF9E00848C64 /* XCRemoteSwiftPackageReference "ImageKit" */ = {
+		5785C7F123CE7F2700FEF28A /* XCRemoteSwiftPackageReference "ImageKit" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/alexpaul/ImageKit";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.2;
+				minimumVersion = 1.0.4;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		578A2BA223C8CF9E00848C64 /* ImageKit */ = {
+		5785C7F223CE7F2700FEF28A /* ImageKit */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 578A2BA123C8CF9E00848C64 /* XCRemoteSwiftPackageReference "ImageKit" */;
+			package = 5785C7F123CE7F2700FEF28A /* XCRemoteSwiftPackageReference "ImageKit" */;
 			productName = ImageKit;
 		};
 /* End XCSwiftPackageProductDependency section */
